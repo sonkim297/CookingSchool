@@ -17,18 +17,54 @@
       <img src="images/team4.jpg" alt="headerlogo" />
 
       <!-- header-menu -->
-      <ul>
-        <li><a class="active" href="#home">Trang chủ</a></li>
-        <li><a href="#news">Khoá học</a></li>
-        <li><a href="#contact">Giới thiệu</a></li>
-        <li style="border-right: 1px solid grey">
-          <a href="#about">Liên hệ</a>
-        </li>
-        <li style="border-left: 1px solid grey">
-          <a href="#news">Đăng nhập</a>
-        </li>
-        <li><a href="#contact">Đăng kí</a></li>
-      </ul>
+      <div>
+        <div class="dropdown">
+          <button class="dropbtn">Đăng kí</button>
+          <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="dropbtn"
+            style="border-left: 1px solid rgba(58, 58, 58, 0.702)"    
+          >
+            Đăng nhập
+          </button>
+          <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+          <button
+            class="dropbtn"
+            style="border-right: 1px solid rgba(58, 58, 58, 0.702)"
+          >
+            Liên hệ
+          </button>
+          <div class="dropdown-content"></div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Giới thiệu</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Khóa học</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Trang chủ</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- header-image -->
@@ -147,7 +183,7 @@
     <!-- pagination -->
     <div class="pagination">
       <a href="#">&laquo;</a>
-      <a href="#"  class="active">1</a>
+      <a href="#" class="active">1</a>
       <a href="#">2</a>
       <a href="#">3</a>
       <a href="#">4</a>
