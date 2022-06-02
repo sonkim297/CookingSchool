@@ -7,6 +7,10 @@
     <title>Cooking School</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="text/javascript" src="js/main.js"></script>
   </head>
 
@@ -41,7 +45,7 @@
           <div class="dropdown-content"></div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Giới thiệu</button>
+          <button class="dropbtn">Giới thiệu   <i class="fa fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -49,7 +53,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Khóa học</button>
+          <button class="dropbtn">Khóa học  <i class="fa fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -57,7 +61,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">Trang chủ</button>
+          <button class="dropbtn">Trang chủ   <i class="fa fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -79,7 +83,7 @@
       <!-- header-image-search-box -->
       <div>
         <input type="text" id="text" name="text" placeholder="Text here" />
-        <button type="button">Search</button>
+        <button type="button"><i class="fa fa-search"></i> Search</button>
       </div>
     </div>
 
@@ -202,6 +206,12 @@
     <div class="footer-content-container clearfix">
       <div class="footer-content-container-img">
         <img src="images/team2.jpg" alt="client" />
+        <div class="footer-content-container-img-overlay">
+          <div class="footer-content-container-img-text-overlay">
+            Kim Sơn <br>
+            Cooking School
+          </div>
+        </div>
       </div>
       <div class="footer-content-container-descripbe">
         <p>
@@ -228,29 +238,33 @@
   <script type="text/javascript">
     let slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
-      showSlides(slideIndex += n);
+      showSlides((slideIndex += n));
     }
-    
+
     function currentSlide(n) {
-      showSlides(slideIndex = n);
+      showSlides((slideIndex = n));
     }
-    
+
     function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
     }
-    </script>
+  </script>
 </html>
