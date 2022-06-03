@@ -21,9 +21,6 @@ img {
 }
 
 .header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
   position: sticky;
   position: -webkit-sticky;
   z-index: 1;
@@ -33,8 +30,16 @@ img {
   background-color: rgba(25, 27, 39, 0.833);
 }
 
+.header > img {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: 65px;
+  margin: 5px;
+}
 
 .dropdown {
+  float: right;
   overflow: hidden;
   margin-top: 8px;
 }
