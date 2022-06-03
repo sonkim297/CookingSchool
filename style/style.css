@@ -13,6 +13,10 @@ body {
 img {
   vertical-align: middle;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .clearfix::after {
   content: "";
@@ -110,7 +114,7 @@ img {
   position: absolute;
   top: 180px;
   left: 75px;
-  color: rgb(122, 138, 220);
+  color: rgb(6, 185, 53);
 }
 
 .header-image-container div input {
@@ -120,6 +124,79 @@ img {
   width: 500px;
   height: 50px;
   opacity: 0.6;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 18px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  padding: 14px 20px;
+  width: 50%;
+}
+
+.container-sign-up {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d50;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 3px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 120px;
+  top: 80px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
 }
 
 .header-image-container div button {
@@ -151,13 +228,14 @@ img {
   justify-content: space-around;
   margin-left: 120px;
   margin-right: 120px;
-  border-bottom: 1px solid black;
-  border-radius: 20px;
+  /* border-bottom: 1px solid black;
+  border-radius: 20px; */
 }
 
 .content-box-row {
-  display: inline-block;
+  display: flexbox;
   padding: auto;
+  align-items: middle;
 }
 
 .content-box-row img {
@@ -214,7 +292,7 @@ img {
   left: 150px;
   transition: 0.5s ease;
   font-size: 16px;
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
 }
 
 .footer-content-container-img:hover .footer-content-container-img-overlay {
@@ -355,11 +433,12 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
+.footer-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: rgba(158, 151, 151, 0.823);
+  height: 200px;
+  margin-bottom: 0px;
+  justify-content: space-around;
 }
