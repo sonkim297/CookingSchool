@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script type="text/javascript" src="js/main.js"></script>
   </head>
@@ -22,137 +22,18 @@
 
       <!-- header-menu -->
       <div>
-        <div class="dropdown clearfix">
-          <button
-            class="dropbtn"
-            onclick="document.getElementById('id01').style.display='block'"
-          >
-            Đăng kí
-          </button>
-          <div id="id01" class="modal">
-            <span
-              onclick="document.getElementById('id01').style.display='none'"
-              class="close"
-              title="Close Modal"
-              >&times;</span
-            >
-            <form class="modal-content" action="/action_page.php">
-              <div class="container-sign-up">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to create an account.</p>
-                <hr />
-                <label for="email"><b>Email</b></label>
-                <input
-                  type="text"
-                  placeholder="Enter Email"
-                  name="email"
-                  required
-                />
-
-                <label for="psw"><b>Password</b></label>
-                <input
-                  type="password"
-                  placeholder="Enter Password"
-                  name="psw"
-                  required
-                />
-
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input
-                  type="password"
-                  placeholder="Repeat Password"
-                  name="psw-repeat"
-                  required
-                />
-
-                <label>
-                  <input
-                    type="checkbox"
-                    checked="checked"
-                    name="remember"
-                    style="margin-bottom: 15px"
-                  />
-                  Remember me
-                </label>
-                <hr />
-                <p>
-                  By creating an account you agree to our
-                  <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
-                </p>
-
-                <div class="clearfix">
-                  <button
-                    type="button"
-                    onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn"
-                  >
-                    Cancel
-                  </button>
-                  <button type="submit" class="signupbtn">Sign Up</button>
-                </div>
-              </div>
-            </form>
-          </div>
+        <div class="dropdown">
+          <button class="dropbtn">Đăng kí</button>
+          <div class="dropdown-content"></div>
         </div>
-        <div class="dropdown clearfix">
+        <div class="dropdown">
           <button
             class="dropbtn"
-            onclick="document.getElementById('id02').style.display='block'""
+            style="border-left: 1px solid rgba(58, 58, 58, 0.702)"
           >
             Đăng nhập
           </button>
-          <div id="id02" class="modal">
-            <span
-              onclick="document.getElementById('id02').style.display='none'"
-              class="close"
-              title="Close Modal"
-              >&times;</span
-            >
-            <form class="modal-content" action="/action_page.php">
-              <div class="container-sign-up">
-                <h1>Login</h1>
-                <p>Please fill in this form to login an account.</p>
-                <hr />
-                <label for="email"><b>Email</b></label>
-                <input
-                  type="text"
-                  placeholder="Enter Email"
-                  name="email"
-                  required
-                />
-
-                <label for="psw"><b>Password</b></label>
-                <input
-                  type="password"
-                  placeholder="Enter Password"
-                  name="psw"
-                  required
-                />
-
-                <label>
-                  <input
-                    type="checkbox"
-                    checked="checked"
-                    name="remember"
-                    style="margin-bottom: 15px"
-                  />
-                  Remember me
-                </label>
-                <hr />
-
-                <div class="clearfix">
-                  <button
-                    type="button"
-                    onclick="document.getElementById('id02').style.display='none'"
-                    class="cancelbtn"
-                  >
-                    Cancel
-                  </button>
-                  <button type="submit" class="signupbtn">Login</button>
-                </div>
-              </div>
-            </form>
-          </div>
+          <div class="dropdown-content"></div>
         </div>
         <div class="dropdown">
           <button
@@ -164,9 +45,7 @@
           <div class="dropdown-content"></div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">
-            Giới thiệu <i class="fa fa-caret-down"></i>
-          </button>
+          <button class="dropbtn">Giới thiệu   <i class="fa fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -174,9 +53,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">
-            Khóa học <i class="fa fa-caret-down"></i>
-          </button>
+          <button class="dropbtn">Khóa học  <i class="fa fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -184,9 +61,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn">
-            Trang chủ <i class="fa fa-caret-down"></i>
-          </button>
+          <button class="dropbtn">Trang chủ   <i class="fa fa-caret-down"></i></button>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -202,7 +77,7 @@
 
       <!-- header-image-content -->
       <div>
-        <p>NẤU ĂN KHÔNG BAO GIỜ DỄ HƠN</p>
+        <p>NẤU ĂN KHÔNG BAO, GIỜ DỄ HƠN</p>
       </div>
 
       <!-- header-image-search-box -->
@@ -252,7 +127,7 @@
         </p>
       </div>
     </div>
-    <hr>
+
     <!-- San pham cua chung toi -->
     <div class="main-text">
       <h2>Sản phẩm của chúng tôi</h2>
@@ -287,7 +162,7 @@
         </p>
       </div>
     </div>
-    <hr>
+
     <div class="main-text">
       <h2>Sản phẩm của chúng tôi</h2>
     </div>
@@ -320,7 +195,7 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <hr>
+
     <!-- main-content -->
     <!-- Hoc vien noi ve chung toi -->
     <div class="main-text">
@@ -333,7 +208,7 @@
         <img src="images/team2.jpg" alt="client" />
         <div class="footer-content-container-img-overlay">
           <div class="footer-content-container-img-text-overlay">
-            Kim Sơn <br />
+            Kim Sơn <br>
             Cooking School
           </div>
         </div>
@@ -347,7 +222,7 @@
         </p>
       </div>
     </div>
-    
+
     <!-- pagination -->
     <div class="pagination">
       <a href="#">&laquo;</a>
@@ -358,34 +233,6 @@
       <a href="#">5</a>
       <a href="#">6</a>
       <a href="#">&raquo;</a>
-    </div>
-
-    <div class="footer-container">
-      <div class="content-box-row">
-        <h1>CONTACT</h1>
-        <p style="background-color: rgba(255, 255, 255, 0)">
-          <i class="fa-brands fa-instagram"></i> @cookingschool
-        </p>
-        <p style="background-color: rgba(255, 255, 255, 0)">
-          <i class="fa-brands fa-google"></i
-          ><a href="http://www.google.com.vn" alt="web"> Cooking School</a>
-        </p>
-      </div>
-      <div
-        class="content-box-row"
-        style="margin-left: 150px; margin-top: 50px; margin-right: 50px"
-      >
-        <h3>
-          Go Make Something Awesome Font Awesome is the internet's icon library
-          and toolkit used by millions of designers, developers, and content
-          creators. Made with and in Bentonville, Boston, Chicago, Grand Rapids,
-          Joplin, Kansas City, Seattle, Tampa, and Vergennes.
-        </h3>
-        <span
-          ><i class="fa-brands fa-github-square" style="font-size: 40px"></i
-        ></span>
-        <span><i class="fa-solid fa-poop" style="font-size: 33px"></i></span>
-      </div>
     </div>
   </body>
   <script type="text/javascript">
@@ -419,27 +266,5 @@
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
     }
-  </script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("id01");
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("id02");
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
   </script>
 </html>
