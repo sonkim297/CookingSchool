@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: beige;
+  background-color: rgb(222, 222, 222);
   font-family: Helvetica, sans-serif;
 }
 
@@ -33,6 +33,22 @@ a {
 }
 /* End Margin */
 
+.name-page{
+  position: absolute;
+  display: block;
+  height: 75px;
+  margin-left: 100px;
+  padding: auto;
+  text-align: center;
+}
+
+.name-page > p{
+  font-family: Courier New, serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
 .dropdown {
   float: right;
   overflow: hidden;
@@ -51,6 +67,7 @@ a {
   margin: 0;
   cursor: pointer;
   transition: background-color 0.5s;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .dropdown:hover .dropbtn {
@@ -64,6 +81,7 @@ a {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 10px;
 }
 
 .dropdown-content a {
@@ -77,7 +95,8 @@ a {
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(221, 221, 221, 0.663);
+  background-color: rgb(84 121 88 / 49%);
+  border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -101,9 +120,11 @@ a {
 
 .header-image-container div p {
   position: absolute;
-  top: 180px;
+  font-family: Courier New, serif;
+  font-size: 60px;
+  top: 140px;
   left: 75px;
-  color: rgb(6, 185, 53);
+  color: rgb(112 146 17);
 }
 
 .header-image-container div input {

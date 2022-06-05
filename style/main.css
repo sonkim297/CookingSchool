@@ -1,17 +1,21 @@
 /* Header */
 .header-container {
   position: sticky;
-  position: -webkit-sticky;
   z-index: 1;
   top: 0px;
   width: 100%;
   height: 75px;
-  background-color: rgba(25, 27, 39, 0.833);
+  background-color: rgba(112, 146, 17, 0.802);
+}
+
+.header-container div div:nth-child(2) {
+  border-right: 2px solid rgb(53, 101, 53);
 }
 
 .header-container > img {
   display: block;
   position: absolute;
+  border-radius: 5px;
   width: auto;
   height: 65px;
   margin: 5px;
@@ -25,6 +29,7 @@
 .content .title {
   display: flex;
   justify-content: center;
+  font-family: Courier New, serif;
   transition: font-size 0.5s;
 }
 
@@ -35,7 +40,7 @@
 }
 
 .content .line-break {
-  border-bottom: 2px solid red;
+  border-bottom: 5px double rgba(32, 32, 32, 0.714);
 }
 
 .content .box-container {
@@ -45,6 +50,15 @@
 }
 
 .content .box-container .box-row {
+  display: flexbox;
+  border: 1.5px solid lightgray;
+  margin: 10px;
+  align-content:center;
+  text-align: center;
+}
+
+.content .box-container .box-row:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content .box-container .box-row img {
@@ -55,19 +69,22 @@
   background-size: contain;
 }
 
-.content .box-container .box-row h1 {
+.content .box-container .box-row h3 {
   display: block;
   position: relative;
   color: black;
   text-align: center;
+  font-family: Courier New, serif;
 }
 
 .content .box-container .box-row p {
   display: block;
   width: 300px;
   position: relative;
+  margin: auto;
   color: black;
-  text-align: center;
+  text-align: justify;
+  font-family: 'Trebuchet MS', sans-serif;
   background-color: rgba(239, 239, 194, 0.835);
 }
 
@@ -80,6 +97,14 @@
   height: 200px;
   margin-bottom: 0px;
   justify-content: space-around;
+}
+
+.footer-container > .box-row h3{
+  text-align: center;
+}
+
+.footer-container > .box-row{
+  margin: auto;
 }
 
 /* Feedback */
@@ -107,7 +132,7 @@
   height: 150px;
   width: 150px;
   opacity: 0;
-  bottom: 5.4px;
+  bottom: 6px;
   left: 150px;
   transition: 0.5s ease;
   background-color: rgb(255, 255, 255);
@@ -129,4 +154,5 @@
   font-size: 18px;
   color: black;
   background-color: rgb(240, 255, 255);
+  font-family: 'Trebuchet MS', sans-serif;
 }
