@@ -241,7 +241,7 @@ hr {
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: rgba(101, 174, 75, 0.33);
 }
 
 /* Slideshow container */

@@ -50,7 +50,6 @@
 }
 
 .content .box-container .box-row {
-  display: flexbox;
   border: 1.5px solid lightgray;
   margin: 10px;
   align-content:center;
