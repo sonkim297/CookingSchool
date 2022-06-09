@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>sign-up page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/favicon.ico" />
-    <link rel="stylesheet" href="/style/main.css" />
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="icon" type="image/x-icon" href=".../favicon.ico" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/signup.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
 
@@ -16,11 +17,11 @@
     <!-- header -->
     <header class="header-container clearfix">
       <!-- logo -->
-      <img src="/images/team4.jpg" alt="headerlogo" />
+      <img src="../images/team4.jpg" alt="headerlogo" />
 
       <!-- name page -->
       <div class="name-page">
-        <p>COOKING SCHOOL</p>
+        <p><a href="../Index.html">COOKING SCHOOL</a></p>
       </div>
 
       <!-- header-menu -->
@@ -65,5 +66,36 @@
         </div>
       </div>
     </header>
+
+    <!-- sign-up-container -->
+    <div class="sign-up-container loading-page">
+
+      <!-- sign-up-form -->
+      <form class="sign-up-form" action="/action_page.php">
+
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr />
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required />
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+
+          <label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" /> Remember me </label>
+
+          <p>By creating an account you agree to our <a href="#" style="color: dodgerblue">Terms & Privacy</a>.</p>
+
+          <div class="clear-fix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

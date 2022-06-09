@@ -8,7 +8,7 @@
   background-color: rgba(112, 146, 17, 0.802);
 }
 
-.header-container div div:nth-child(2) {
+.header-container  >div > div:nth-child(2) {
   border-right: 2px solid rgb(53, 101, 53);
 }
 
