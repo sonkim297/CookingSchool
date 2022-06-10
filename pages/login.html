@@ -16,6 +16,7 @@
   <body>
     <!-- header -->
     <header class="header-container clearfix">
+        
       <!-- logo -->
       <img src="../images/team4.jpg" alt="headerlogo" />
 
@@ -27,11 +28,11 @@
       <!-- header-menu -->
       <div>
         <div class="dropdown">
-          <button class="dropbtn">Đăng kí</button>
+            <button class="dropbtn"><a href="../pages/sign-up.html">Đăng kí</a></button>
         </div>
 
         <div class="dropdown">
-          <button class="dropbtn"><a href="../pages/login.html">Đăng nhập</a></button>
+          <button class="dropbtn">Đăng nhập</button>
         </div>
 
         <div class="dropdown">
@@ -76,8 +77,8 @@
       <!-- sign-up-form -->
       <form class="sign-up-form" action="/action_page.php">
 
-          <h1>Đăng kí</h1>
-          <p>Điền đầy đủ các thông tin trong bảng để thực hiện đăng kí.</p>
+          <h1>Đăng nhập</h1>
+          <p>Chào mừng quay trở lại Cooking School</p>
           <hr />
 
           <label for="email"><b>Email</b></label>
@@ -86,16 +87,13 @@
           <label for="psw"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required />
 
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+          <label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" /> Remember me </label>
 
-          <label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" /> Ghi nhớ </label>
-
-          <p>Bằng việc tạo tài khoản, bạn đã đồng ý các <a href="#" style="color: dodgerblue">Điều khoản</a> của chúng tôi.</p>
+          <p>Nếu chưa có tài khoản, vui lòng <a href="../pages/sign-up.html" style="color: dodgerblue">Click vào đây</a> để đăng kí.</p>
 
           <div class="clear-fix">
             <button type="button" class="cancelbtn"><a href="../Index.html">Cancel</a></button>
-            <button type="submit" class="signupbtn">Sign Up</button>
+            <button type="submit" class="signupbtn">Login</button>
           </div>
         </div>
       </form>
