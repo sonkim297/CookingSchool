@@ -8,12 +8,11 @@
   background-color: rgba(112, 146, 17, 0.802);
 }
 
-.header-container  >div > div:nth-child(2) {
+.header-container > div > div:nth-child(3) {
   border-right: 2px solid rgb(53, 101, 53);
 }
 
 .header-container > img {
-  display: block;
   position: absolute;
   border-radius: 5px;
   width: auto;
@@ -52,7 +51,7 @@
 .content .box-container .box-row {
   border: 1.5px solid lightgray;
   margin: 10px;
-  align-content:center;
+  align-content: center;
   text-align: center;
 }
 
@@ -98,11 +97,11 @@
   justify-content: space-around;
 }
 
-.footer-container > .box-row h3{
+.footer-container > .box-row h3 {
   text-align: center;
 }
 
-.footer-container > .box-row{
+.footer-container > .box-row {
   margin: auto;
 }
 

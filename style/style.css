@@ -72,12 +72,37 @@ hr {
   font-weight: bold;
   font-size: 25px;
   color: white;
+  letter-spacing: 6px;
 }
 
+/* user-name */
+.user-name {
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  color: white;
+  padding: 20px;
+  width: 202px;
+  background-color: inherit;
+  margin: 0;
+  cursor: auto;
+}
+/* end-user-name */
+
+/* menu-bar */
 .dropdown {
   float: right;
   overflow: hidden;
   margin-top: 8px;
+}
+
+/* user-avatar */
+.dropdown img {
+  border-radius: 5px;
+  width: auto;
+  height: 58px;
+  margin-right: 20px;
 }
 
 .dropdown .dropbtn {
@@ -127,7 +152,9 @@ hr {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* menu-bar */
 
+/* banner */
 .header-image-container {
   position: relative;
   font-weight: bolder;
@@ -136,7 +163,8 @@ hr {
 
 .header-image-container img {
   display: block;
-  background-size: contain;
+  object-fit: cover;
+  object-position: 100% 90%;
   height: 678px;
   width: 100%;
   margin-left: auto;
@@ -147,7 +175,7 @@ hr {
   position: absolute;
   font-family: Courier New, serif;
   font-size: 60px;
-  top: 140px;
+  top: 75px;
   left: 75px;
   color: rgb(112 146 17);
 }
@@ -170,6 +198,7 @@ hr {
   opacity: 0.7;
   cursor: pointer;
 }
+/* banner */
 
 .pagination {
   display: inline-block;

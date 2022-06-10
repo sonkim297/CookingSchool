@@ -1,0 +1,143 @@
+.body-container {
+  position: relative;
+  overflow: hidden;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+}
+
+/* banner */
+.body-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: 100% 20%;
+}
+
+/* filter and search box */
+.body-container .filter-search-bar {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.body-container .filter-search-bar div > select {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.body-container .filter-search-bar div > input[type='text'] {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.body-container .list-courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 20px;
+  padding: 31.5px;
+}
+
+.body-container .list-courses-container .courses-card {
+  position: relative;
+  display: block;
+  width: 350px;
+  height: 370px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 2px outset gray;
+  text-align: center;
+}
+
+.body-container .list-courses-container .courses-card:hover {
+  background-color: rgba(91, 91, 91, 0.566);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    8px 8px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.body-container .list-courses-container .courses-card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.body-container .list-courses-container .courses-card button {
+  display: inline;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  font-size: 14px;
+  background-color: rgba(133, 161, 58, 0.871);
+}
+
+.body-container .list-courses-container .courses-card button:hover {
+  background-color: #2f713c;
+}
+
+.body-container .list-courses-container .courses-card .choose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.body-container .list-courses-container .courses-card .choose > img {
+  width: 25px;
+  height: auto;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: rgb(126, 126, 126);
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.load-more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.load-more span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.load-more:hover span {
+  padding-right: 25px;
+}
+
+.load-more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
